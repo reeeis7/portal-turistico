@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Brasil Encantado</title>
+    <link rel="stylesheet" href="css/style.css">
+      <link rel="shortcut icon" href="img/icon.png" type="image/png">
+</head>
+<body>
+
+<header>
+    <h1>Brasil Encantado</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="gastronomia.html">Gastronomia</a></li>
+            <li><a href="contato.html" class="ativo">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- titulo da pagina -->
+    <section class="topo-pagina">
+        <h2>Entre em Contato</h2>
+        <p>Tem alguma dúvida ou quer saber mais sobre os destinos? Manda uma mensagem pra gente!</p>
+    </section>
+
+    <!-- area principal com formulario e informacoes -->
+    <section class="area-contato">
+
+        <!-- formulario de contato -->
+        <div class="caixa-formulario">
+            <h3>Mande uma Mensagem</h3>
+            <p>Preencha o formulário abaixo e a nossa equipe vai responder em até 2 dias úteis.</p>
+
+            <form action="#" method="post">
+
+                <!-- campo nome -->
+                <div class="campo">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <!-- campo email -->
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <!-- campo telefone, nao e obrigatorio -->
+                <div class="campo">
+                    <label for="telefone">Telefone (opcional):</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                </div>
+
+                <!-- o usuario escolhe sobre qual destino quer saber -->
+                <div class="campo">
+                    <label for="destino">Destino de interesse:</label>
+                    <select id="destino" name="destino">
+                        <option value="">Selecione um destino...</option>
+                        <option value="bahia">Bahia</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="outro">Outro / Geral</option>
+                    </select>
+                </div>
+
+                <!-- campo mensagem -->
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" 
+                        placeholder="Escreva sua mensagem aqui..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+
+            </form>
+        </div>
+
+        <!-- informacoes de contato do lado direito -->
+        <div class="caixa-info">
+            <h3>Outras formas de contato</h3>
+
+            <div class="info-item">
+                <h4>📧 E-mail</h4>
+                <p>contato@brasilencantado.com.br</p>
+                <p>suporte@brasilencantado.com.br</p>
+            </div>
+
+            <div class="info-item">
+                <h4>📞 Telefone</h4>
+                <p>(11) 99999-0000</p>
+                <p>Seg a Sex, das 9h às 18h</p>
+            </div>
+
+            <div class="info-item">
+                <h4>📍 Endereço</h4>
+                <p>Av. Turismo Brasil, 1500</p>
+                <p>São Paulo – SP, 01310-000</p>
+            </div>
+
+            <div class="info-item">
+                <h4>📱 Redes Sociais</h4>
+                <p>@brasilencantado no Instagram</p>
+                <p>Brasil Encantado no Facebook</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- mapa ficticio / secao de localizacao -->
+    <section class="secao-mapa">
+        <h3>Nossa Localização</h3>
+        <p>Estamos localizados em São Paulo, mas atendemos turistas de todo o Brasil e do mundo!</p>
+
+        <!-- coloquei um iframe do google maps ficticio, em producao trocar pelo link real -->
+        <div class="mapa-box">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975!2d-46.6548!3d-23.5646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzUyLjYiUyA0NsKwMzknMTcuMyJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                width="100%"
+                height="350"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                title="Mapa da localização Brasil Encantado">
+            </iframe>
+        </div>
+    </section>
+
+</main>
+
+<!-- perguntas frequentes na barra lateral -->
+<aside>
+    <h3>Perguntas Frequentes</h3>
+
+    <h4>O site vende pacotes de viagem?</h4>
+    <p>Não, o Brasil Encantado é um portal informativo. Indicamos os destinos mas 
+    você deve contratar pacotes diretamente com agências de viagem ou hotéis.</p>
+
+    <h4>Posso sugerir um destino?</h4>
+    <p>Sim! Manda uma mensagem pelo formulário com o nome do destino e o motivo 
+    da sugestão. Adoramos receber indicações dos nossos visitantes.</p>
+
+    <h4>As informações dos hotéis são atualizadas?</h4>
+    <p>Tentamos manter as informações sempre atualizadas, mas recomendamos 
+    confirmar diretamente com o hotel antes de fazer a reserva.</p>
+
+    <h4>Quanto tempo leva para responder?</h4>
+    <p>Respondemos em até 2 dias úteis. Se for urgente, entre em contato 
+    pelo telefone (11) 99999-0000.</p>
+</aside>
+
+<footer>
+    <div class="footer-info">
+        <p><strong>Brasil Encantado</strong> – Portal Turístico Interativo</p>
+        <p>Integrantes: Eduardo Torrezan | Gabriel Reis | Heitor Souza</p>
+        <p>Contato: contato@brasilencantado.com.br | (11) 99999-0000</p>
+    </div>
+</footer>
+
+</body>
+</html>

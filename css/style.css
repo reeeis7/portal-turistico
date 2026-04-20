@@ -1,0 +1,681 @@
+/* ==========================================
+   style.css
+   css principal do site Brasil Encantado
+   usado em todas as paginas do projeto
+   feito por: [nomes do grupo]
+   ========================================== */
+
+
+/* --- configuracoes gerais do body --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* --- header --- */
+header {
+    background-color: #1a6b3c;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #f0c060;
+    font-size: 28px;
+    margin: 0;
+}
+
+/* menu de navegacao */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    background-color: #ffffff30;
+}
+
+/* deixa o link da pagina atual diferente */
+.menu li a.ativo {
+    background-color: #c8922a;
+    color: white;
+}
+
+
+/* --- topo de cada pagina --- */
+.topo-pagina {
+    background-color: #1a6b3c;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.topo-pagina h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.topo-pagina p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+
+/* ==========================================
+   ESTILOS DA PAGINA DE DESTINOS
+   ========================================== */
+
+/* --- secoes de cada destino --- */
+.destino {
+    background-color: white;
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 8px;
+    /* coloquei sombra para ficar mais bonito */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.destino h2 {
+    color: #1a6b3c;
+    font-size: 28px;
+    border-bottom: 3px solid #c8922a;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+}
+
+.frase-destino {
+    color: #c8922a;
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.destino p {
+    line-height: 1.7;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+.destino h3 {
+    color: #1a6b3c;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* --- lista de cidades --- */
+.lista-cidades {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.lista-cidades li {
+    margin-bottom: 6px;
+    color: #444;
+}
+
+
+/* --- cards dos hoteis --- */
+.caixa-hotel {
+    border: 1px solid #ddd;
+    border-left: 4px solid #c8922a;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: #fafafa;
+}
+
+.caixa-hotel:hover {
+    background-color: #fff8ee;
+}
+
+.caixa-hotel h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.caixa-hotel p {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #555;
+}
+
+
+/* --- galeria de fotos --- */
+.galeria {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.galeria figure {
+    flex: 1;
+    margin: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.galeria img:hover {
+    opacity: 0.9;
+}
+
+.galeria figcaption {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 6px;
+    font-size: 13px;
+    color: #666;
+}
+
+
+/* --- video do youtube --- */
+.video-box {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* tentei deixar o video responsivo */
+.video-box iframe {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+
+/* ==========================================
+   ESTILOS DA PAGINA DE CONTATO
+   ========================================== */
+
+/* area principal de contato */
+/* usei flexbox aqui pra deixar o formulario e as infos lado a lado */
+.area-contato {
+    display: flex;
+    gap: 25px;
+    max-width: 900px;
+    margin: 30px auto;
+    align-items: flex-start;
+}
+
+
+/* --- caixa do formulario --- */
+.caixa-formulario {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 2;
+}
+
+.caixa-formulario h3 {
+    color: #1a6b3c;
+    font-size: 20px;
+    border-bottom: 3px solid #c8922a;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+.caixa-formulario p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+/* --- campos do formulario --- */
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* estilo para os inputs, select e textarea */
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    /* tirei o outline padrao e coloquei uma borda verde quando clica */
+    outline: none;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea {
+    border-color: #1a6b3c;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+
+/* --- botao de enviar --- */
+.btn-enviar {
+    background-color: #1a6b3c;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.btn-enviar:hover {
+    background-color: #155530;
+}
+
+
+/* --- caixa de informacoes de contato --- */
+.caixa-info {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.caixa-info h3 {
+    color: #1a6b3c;
+    font-size: 20px;
+    border-bottom: 3px solid #c8922a;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.info-item {
+    margin-bottom: 18px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.info-item h4 {
+    font-size: 15px;
+    color: #c8922a;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    font-size: 13px;
+    color: #555;
+    margin: 2px 0;
+    line-height: 1.6;
+}
+
+
+/* --- secao do mapa --- */
+.secao-mapa {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.secao-mapa h3 {
+    color: #1a6b3c;
+    font-size: 20px;
+    border-bottom: 3px solid #c8922a;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.secao-mapa p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* deixei o iframe do mapa com borda arredondada */
+.mapa-box {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+
+/* ==========================================
+   ESTILOS DA PAGINA INICIAL (INDEX)
+   ========================================== */
+
+/* --- banner principal --- */
+.banner {
+    background-color: #1a6b3c;
+    /* nao consegui colocar imagem de fundo aqui ainda, deixei so a cor */
+    padding: 80px 30px;
+    text-align: center;
+    color: white;
+}
+
+.banner-texto h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #f0c060;
+}
+
+.banner-texto p {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* botao do banner */
+.btn-destinos {
+    background-color: #c8922a;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-destinos:hover {
+    background-color: #a87520;
+}
+
+
+/* --- secao sobre o portal --- */
+.sobre {
+    background-color: white;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sobre h2 {
+    color: #1a6b3c;
+    font-size: 24px;
+    border-bottom: 3px solid #c8922a;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.sobre p {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+
+/* --- secao de destinos em destaque --- */
+.destinos-destaque {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 0 10px 0;
+}
+
+.destinos-destaque h2 {
+    color: #1a6b3c;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitulo-secao {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* os tres cards lado a lado com flexbox */
+.cards-destinos {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.card img:hover {
+    opacity: 0.9;
+}
+
+.card-info {
+    padding: 15px;
+}
+
+.card-info h3 {
+    color: #1a6b3c;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card-info p {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* botao de cada card */
+.btn-card {
+    background-color: #1a6b3c;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-card:hover {
+    background-color: #155530;
+}
+
+
+/* --- secao de numeros do brasil --- */
+.numeros {
+    background-color: #c8922a;
+    padding: 40px 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.numeros h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/* grid dos numeros, tentei deixar tudo em linha */
+.numeros-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.numero-item {
+    color: white;
+}
+
+.numero-grande {
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.numero-item p {
+    font-size: 14px;
+    color: #fff3de;
+}
+
+
+/* --- secao por que viajar --- */
+.por-que {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.por-que h2 {
+    color: #1a6b3c;
+    font-size: 24px;
+    border-bottom: 3px solid #c8922a;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+/* grid dos motivos com flexbox */
+.motivos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.motivo {
+    flex: 1;
+    min-width: 180px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 15px;
+    border-left: 4px solid #1a6b3c;
+}
+
+.motivo h4 {
+    color: #1a6b3c;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.motivo p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   ASIDE - USADO EM TODAS AS PAGINAS
+   ========================================== */
+aside {
+    background-color: #1a6b3c;
+    color: white;
+    padding: 30px;
+    margin: 0 auto 30px;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+aside h3 {
+    font-size: 22px;
+    color: #f0c060;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0c060;
+    padding-bottom: 8px;
+}
+
+aside h4 {
+    font-size: 16px;
+    color: #f0c060;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+aside p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 6px;
+    color: #ddd;
+}
+
+aside ul {
+    padding-left: 18px;
+    list-style: disc;
+}
+
+aside ul li {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer {
+    background-color: #111;
+    color: #bbb;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 13px;
+}
